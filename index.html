@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width = device-width", initial-scale= 1.0">
+  <link rel = "stylesheet" href = "style.css"> <!--CONECTA-SE AO DOCUMENTO CSS-->
+  <script src = "script.js"></script> <!--CONECTA-SE AO DOCUMENTO JAVASCRIPT-->
+  <title> Calculadora Web </title>
+
+</head>
+
+<body>
+  <div class = "centralizar-vertical-calculadora">
+    <div class = "calculadora">
+	
+	  <h1> Calculadora </h1>
+	  
+	    <p id = "estilo-resultado">  </p>
+	  
+	  <table>
+	    <tr> <!--PRIMEIRA LINHA-->
+		  <td><button class = "estilo-botoes" onclick = "clean()"> C </button></td> <!--ONCLICK = JAVASCRIPT-->
+		  <td><button class = "estilo-botoes" onclick = "back()"> < </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('/')"> / </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('*')"> X </button></td>
+	    </tr>
+		<tr> <!--SEGUNDA LINHA-->
+		  <td><button class = "estilo-botoes" onclick = "insert('7')"> 7 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('8')"> 8 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('9')"> 9 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('-')"> - </button></td>
+	    </tr>
+		<tr> <!--TERCEIRA LINHA-->
+		  <td><button class = "estilo-botoes" onclick = "insert('4')"> 4 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('5')"> 5 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('6')"> 6 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('+')"> + </button></td>
+	    </tr>
+		<tr> <!--QUARTA LINHA-->
+		  <td><button class = "estilo-botoes" onclick = "insert('1')"> 1 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('2')"> 2 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('3')"> 3 </button></td>
+		  <td rowspan = "2"><button class = "estilo-botoes" id = "botao-igual" onclick = "calcular()"> = </button></td>
+	    </tr>
+		<tr> <!--QUINTA LINHA-->
+		  <td colspan = "2"><button class = "estilo-botoes" id = "botao-zero" onclick = "insert('0')"> 0 </button></td>
+		  <td><button class = "estilo-botoes" onclick = "insert('.')"> . </button></td>
+	    </tr>
+	  </table>
+	  
+    </div>
+  </div>
+  
+</body>
+</html>
